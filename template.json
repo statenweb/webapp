@@ -2,13 +2,19 @@
   "name": "statenweb",
   "parse": [
     "Capfile",
+    ".bowerrc",
+    ".gitignore",
+    ".env.example",
     "bower.json",
     "composer.json",
     "Gruntfile.js",
     "package.json",
     "config/deploy.rb",
     "config/deploy/staging.rb",
-    "config/deploy/production.rb"
+    "config/deploy/production.rb",
+    "web/app/themes/template-theme/namespace/actions.php",
+    "web/app/themes/template-theme/application.php",
+    "README.md"
   ],
   "discard": [
     "filters",
