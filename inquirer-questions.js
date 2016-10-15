@@ -7,6 +7,12 @@ module.exports = [
     },
     {
         type: 'input',
+        name: 'namespace',
+        message: 'Namespace, e.g. New_Project',
+        default: 'New_Project'
+    },
+    {
+        type: 'input',
         name: 'theme_slug',
         message: 'Theme Slug, e.g. new-project',
         default: 'new-project'
