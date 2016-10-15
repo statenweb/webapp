@@ -15,12 +15,18 @@
 
 use Timber\Timber;
 
+
 if ( ! class_exists( 'Timber' ) ) {
 	echo 'Timber not activated. Make sure you activate the plugin in <a href="/wp-admin/plugins.php#timber">/wp-admin/plugins.php</a>';
+
 	return;
 }
-$context = Timber::get_context();
-$context['posts'] = Timber::get_posts();
+$context                                       = Timber::get_context();
+$context['post']                               = Timber::get_post();
+$context['quick_search']                       = dehart_search_form();
+$context['contact_us']                         = do_shortcode( '[gravityform id="1" title="false" description="false"]' );
+$context['mailing_list_form']                  = do_shortcode( '[yikes-mailchimp form="1" title="1" description="1" submit="Sign Up!"]' );
+Timber::render( 'front-page.twig', $context );
 
 
-Timber::render( 'index.twig' , $context );
+

@@ -1,0 +1,24 @@
+.about-us{
+  color: $soft-white;
+  background: $base-blue;
+  padding: 15px 30px;
+  .about-content-wrapper {
+    padding: 15px 0;
+    h2{
+      margin-bottom: 15px;
+    }
+    img {
+      width: 150px;
+      display: inline;
+      margin-right: 10px;
+      float: left;
+    }
+  }
+}
+@media(max-width: $screen-xs-max){
+
+  .about-us{
+    padding:15px;
+  }
+
+}

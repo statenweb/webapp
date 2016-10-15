@@ -1,0 +1,67 @@
+.mail-list-bar {
+  background-color: $lighter-blue;
+  padding: 15px 0;
+  color: $soft-white;
+  line-height: 32px;
+  float: left;
+  width: 100%;
+  .modal-launch-button {
+    color: $soft-white;
+    h4 {
+      display: inline;
+      margin: 0;
+      vertical-align: middle;
+      padding-right: 15px;
+    }
+    .email-icon {
+      display: inline-block;
+      margin: 0;
+      background: url('./images/email_darker.png');
+      background-size: cover;
+      background-position: center;
+      height: 32px;
+      width: 32px;
+      vertical-align: middle;
+
+    }
+    &:hover {
+      h4{
+        text-decoration: underline;
+        color: $soft-white;
+      }
+      .email-icon {
+        background: url('./images/email_lighter.png');
+        background-size: cover;
+      }
+    }
+  }
+  .modal{
+   .modal-dialog{
+     .modal-content{
+       .modal-body{
+         background: $base-blue;
+         border-radius: 4px;
+         .close{
+           color: white;
+         }
+         .yikes-mailchimp-container-1{
+           .yikes-easy-mc-form-1 {
+             button {
+               border: none;
+               color: #eee;
+               background: #BA3F0B;
+               transition: all .2s ease-in-out;
+               padding: 4px 12px;
+               &:hover {
+                 background-color: $lightest-orange;
+                 transition: all .2s ease-in-out;
+               }
+             }
+           }
+         }
+       }
+     }
+    }
+  }
+}
+

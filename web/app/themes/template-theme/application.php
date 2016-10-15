@@ -1,11 +1,10 @@
 <?php
 
-
-use {{ template_slug }}\Actions;
+use {{ namespace }}\Actions;
 
 spl_autoload_register( function ( $class ) {
 	$base = explode( '\\', $class );
-	if ( '{{ template_slug }}' === $base[0] ) {
+	if ( '{{ namespace }}' === $base[0] ) {
 		$file = __DIR__ . '/' . strtolower( str_replace( [ '\\' ], DIRECTORY_SEPARATOR, $class ) . '.php' );
 		if ( file_exists( $file ) ) {
 			require $file;
@@ -21,3 +20,5 @@ add_action( 'init', function () {
 	$actions->init();
 
 } );
+
+\Dehart\Endpoints\Endpoints::init();

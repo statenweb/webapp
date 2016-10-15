@@ -1,0 +1,30 @@
+.file-download{
+  background: $lighter-blue;
+  padding: 15px 0;
+  text-align: center;
+  a{
+    display: inline-block;
+    padding:15px;
+    text-align: center;
+    color: $soft-white;
+    @media(max-width: $screen-xs-min){
+      display: block;
+    }
+    .file-icon{
+      background-size: cover;
+      background-position: center;
+      height: 16px;
+      width: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 16px;
+    }
+    &:hover{
+      .file-icon {
+        background: url('./images/orange_file_logo.png') !important;
+        background-size: cover !important;
+        background-position: center !important;
+      }
+    }
+  }
+}

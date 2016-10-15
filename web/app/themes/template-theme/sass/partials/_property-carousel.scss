@@ -1,0 +1,115 @@
+.property-carousel-wrapper {
+  padding: 70px 0;
+  background: $base-blue;
+  h3 {
+    color: $soft-white;
+    padding: 15px;
+    margin: 0;
+  }
+  #IDX-showcaseGallery-45354 {
+    .IDX-showcaseRow {
+      .owl-wrapper-outer {
+        .owl-wrapper {
+          .owl-item {
+            display: inline-block;
+            .IDX-showcaseCell {
+              .IDX-showcaseContainer {
+                color: $soft-white;
+                height: inherit !important;
+                border: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                padding: 0;
+                &:hover,
+                &:focus,
+                &:active {
+                  a.text-wrapper-link{
+                    color: $lightest-yellow;
+                  }
+                }
+                a.IDX-showcaseLink {
+                  padding: 0;
+                  .property-image {
+                    position: relative;
+                    border-radius: 4px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 350px;
+                    height: 350px;
+                    margin: 0 auto;
+                  }
+                }
+                a.text-wrapper-link{
+                  color: $soft-white;
+                  text-decoration: none;
+                  .IDX-showcasePrice{
+                    font-size: 24px;
+                    margin-top: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .owl-controls {
+        text-align: center;
+        .owl-buttons {
+          .owl-prev,
+          .owl-next {
+            padding: 10px;
+            border-radius: 45px;
+            width: 45px;
+            height: 45px;
+            display: inline-block;
+            margin: 10px;
+            background: $lighter-blue;
+            color: $lighter-yellow;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            &:hover,
+            &:focus,
+            &:active{
+              background: $lightest-blue;
+              color: $lightest-yellow;
+              -webkit-transition: all 0.2s ease-in-out;
+              -moz-transition: all 0.2s ease-in-out;
+              -ms-transition: all 0.2s ease-in-out;
+              -o-transition: all 0.2s ease-in-out;
+              transition: all 0.2s ease-in-out;
+            }
+            i{
+              font-size: 24px;
+            }
+            span{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+  @media(max-width: 375px) {
+
+    .impress-carousel {
+      .owl-wrapper-outer {
+        .owl-wrapper {
+          .owl-item {
+            .impress-carousel-property {
+              .property-image {
+                width: 300px !important;
+                height: 300px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }

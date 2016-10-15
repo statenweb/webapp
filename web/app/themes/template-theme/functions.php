@@ -1,4 +1,6 @@
 <?php
+require __DIR__ . '/application.php';
+
 
 if ( ! class_exists( 'Timber' ) ) {
 	add_action( 'admin_notices', function() {
@@ -36,6 +38,7 @@ class StarterSite extends TimberSite {
 		$context['notes'] = 'These values are available everytime you call Timber::get_context();';
 		$context['menu'] = new TimberMenu();
 		$context['site'] = $this;
+		$context['social_menu']  = $this->output_social_media();
 		return $context;
 	}
 
@@ -51,6 +54,56 @@ class StarterSite extends TimberSite {
 		return $twig;
 	}
 
+	function output_social_media($new_window = true, $classes = array())
+	{
+		$target = $class_output = '';
+
+		if ( $new_window ) {
+			$target = ' target="_BLANK" ';
+		}
+
+		$services = array(
+				array(
+						'service' => 'instagram',
+						'class' => 'fa fa-instagram fa-stack-1x',
+				),
+				array(
+						'service' => 'facebook',
+						'class' => 'fa fa-facebook fa-stack-1x',
+				),
+				array(
+						'service' => 'twitter',
+						'class' => 'fa fa-twitter fa-stack-1x',
+				),
+				array(
+						'service' => 'linkedin',
+						'class' => 'fa fa-linkedin fa-stack-1x',
+				),
+		);
+		foreach($classes as $single_class) {
+			$class_output .= $single_class . ' ';
+		}
+
+		$outer_template = '<div class="social %s">%s</div>';
+		$inner_template = '<a %s href="%s" class="social-btn"><span class="fa-stack fa-lg">  <i class="fa fa-circle fa-stack-2x icon-background"></i><i class="%s"></i></span></a>';
+		$inner = '';
+		foreach ($services as $service_array) {
+			$service = $service_array['service'];
+			$class = $service_array['class'];
+
+			if ( $url = Social_Links::get( $service . '_url' ) ) {
+
+				$inner .= sprintf( $inner_template, $target, esc_url( $url ), esc_attr( $class ) );
+			}
+
+		}
+
+		return sprintf($outer_template, $class_output, $inner);
+
+
+	}
+
 }
 
 new StarterSite();
+

@@ -4,7 +4,7 @@
  *
  *
  * @package  WordPress
- * @subpackage  StatenWeb
+ * @subpackage  Timber
  */
 
 Timber::render( array( 'sidebar.twig' ), $data );

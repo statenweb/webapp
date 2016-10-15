@@ -1,0 +1,48 @@
+.property-type-wrapper{
+  background: $base-blue;
+  padding: 30px 0 50px;
+  float: left;
+  width: 100%;
+  .property-type-outer{
+    padding: 15px;
+    a {
+      .background-image {
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        position: relative;
+        border-radius: 4px;
+        .title{
+          position: relative;
+          color: $soft-white;
+          background: rgba(0, 0, 0, 0.8);
+          padding:10px 0;
+          font-size: 24px;
+        }
+        .image-overlay {
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: transparent;
+        }
+      }
+      &:hover,
+      &:focus,
+      &:active{
+        color: $lightest-yellow;
+        .background-image{
+          .title{
+            color: $lightest-yellow;
+            background: transparent;
+          }
+          .image-overlay{
+            background: rgba(3,23,40,0.65);
+          }
+        }
+      }
+    }
+  }
+}

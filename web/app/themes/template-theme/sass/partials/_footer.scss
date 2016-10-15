@@ -1,0 +1,26 @@
+.footer {
+  background: $darkest-blue;
+  color: white;
+  padding: 15px 0;
+  .powered-by {
+    a {
+      text-decoration: underline;
+      color: #cccccc;
+      &:hover {
+        color: $lightest-orange;
+      }
+    }
+  }
+}
+
+.footer-mailing-list-wrap {
+
+
+  input {
+    color: #000;
+  }
+
+  h3, section, form {
+    text-align: center;
+  }
+}
