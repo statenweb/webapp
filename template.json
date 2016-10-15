@@ -1,6 +1,9 @@
 {
   "name": "statenweb",
-  "parse": "*",
+  "parse": [
+    "*",
+    "!web/app/themes/template-theme/templates"
+  ],
   "discard": [
     "filters",
     "template.json"
