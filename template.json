@@ -5,11 +5,13 @@
     "bower.json",
     "composer.json",
     "Gruntfile.js",
-    "package.json"
+    "package.json",
+    "config"
   ],
   "discard": [
     "filters",
-    "template.json"
+    "template.json",
+    "inquirer-questions.json"
   ],
   "move": [
 
