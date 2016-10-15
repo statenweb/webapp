@@ -1,7 +1,7 @@
 module.exports = [
     {
         type: 'input',
-        name: 'theme_name',
+        name: 'name',
         message: 'Theme Name, e.g. new project',
         default: 'new project'
     },

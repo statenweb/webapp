@@ -1,4 +1,4 @@
 
-# {{ theme_name }}
+# {{ name }}
 
 Theme based on Timber and Underscores
