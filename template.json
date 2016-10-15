@@ -1,8 +1,12 @@
 {
   "name": "statenweb",
   "parse": [
-    "*",
-    "!web/app/themes/template-theme/templates/"
+    "Capfile",
+    "bower.json",
+    "config/",
+    "composer.json",
+    "Gruntfile.js",
+    "package.json"
   ],
   "discard": [
     "filters",
