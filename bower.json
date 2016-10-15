@@ -1,0 +1,26 @@
+{
+  "name": "forthepeople",
+  "homepage": "http://forthepeople.com",
+  "authors": [
+    "Mat Gargano <mgargano@forthepeople.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "font-awesome": "^4.6.3",
+    "slick-carousel": "slick.js#^1.6.0",
+    "sass-web-fonts": "^2.0.1"
+  },
+  "devDependencies": {
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "statenweb/{{ theme_slug|e }}",
+  "description": "{{ description|e }}",
+  "license": "proprietary",
+  "config": {
+    "vendor-dir": "web/app/mu-plugins"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://satis.statenweb.com"
+    }
+  ],
+  "require": {
+    "mnsami/composer-custom-directory-installer": "1.0.*",
+    "johnpbloch/wordpress": "4.*",
+    "vlucas/phpdotenv": "~2.0",
+    "mgargano/advancedcustomfields": "5.*",
+    "wpackagist-plugin/timber-library": "^1.0",
+    "wpackagist-plugin/regenerate-thumbnails": "^2.2",
+    "wpackagist-plugin/wordpress-seo": "^3.3",
+    "wpackagist-plugin/simple-page-ordering": "^2.2",
+    "mgargano/wp-migrate-db-pro-media-files": "~1.4",
+    "mgargano/wp-migrate-db-pro": "~1.6",
+    "mgargano/gravity-forms" : "2.*",
+    "wpackagist-plugin/postman-smtp": "^1.7"
+  },
+  "require-dev": {
+    "wpackagist-plugin/debug-bar": "^0.8"
+
+  },
+  "extra": {
+    "webroot-dir": "wp",
+    "wordpress-install-dir": "./web/wp",
+    "installer-paths": {
+      "./phpdotenv/": [
+        "vlucas/phpdotenv"
+      ],
+      "web/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "web/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    }
+  },
+  "scripts": {
+    "cs": "//phpcs --standard=PSR2 src/",
+    "cbf": "//phpcbf --standard=PSR2 src/"
+  }
+}
