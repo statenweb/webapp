@@ -1,6 +1,6 @@
 # config valid only for current version of Capistrano
 
-set :application, '{{ qa_server }}'
+set :application, '{{ qa_directory }}'
 set :repo_url, '{{ git_repo }}'
 set :log_level, :info
 set :branch, `git rev-parse --abbrev-ref HEAD`.chomp
