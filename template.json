@@ -6,7 +6,9 @@
     "composer.json",
     "Gruntfile.js",
     "package.json",
-    "config/*"
+    "config/deploy.rb",
+    "config/deploy/staging.rb",
+    "config/deploy/production.rb"
   ],
   "discard": [
     "filters",
