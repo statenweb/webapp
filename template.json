@@ -1,12 +1,7 @@
 {
-  "name": "webapp",
-  "parse": [
-    "PROJECT-README",
-    "Dockerfile",
-    "project-name.html"
-  ],
+  "name": "statenweb",
+  "parse": "*",
   "discard": [
-    "README.md",
     "filters",
     "template.json"
   ],
@@ -17,7 +12,5 @@
   "filters": {
     "markdown": "filters/markdown.js"
   },
-  "questions": "inquirer-questions.js",
-  "container": "debian",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  "questions": "inquirer-questions.js"
 }
