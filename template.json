@@ -6,8 +6,7 @@
     "template.json"
   ],
   "move": [
-    { "PROJECT-README": "README.md" },
-    { "project-name.html": "{{ name }}.html" }
+
   ],
   "filters": {
     "markdown": "filters/markdown.js"
