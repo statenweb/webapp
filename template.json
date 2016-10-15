@@ -16,7 +16,7 @@
     "inquirer-questions.json"
   ],
   "move": [
-
+    { "web/app/themes/template-theme": "web/app/themes/{{ name }}" }
   ],
   "filters": {
     "markdown": "filters/markdown.js"
