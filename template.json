@@ -22,6 +22,7 @@
     "inquirer-questions.json"
   ],
   "move": [
+    { "web/app/themes/template-theme/namespace": "web/app/themes/template-theme/{{ namespace|lower }}" },
     { "web/app/themes/template-theme": "web/app/themes/{{ name }}" }
   ],
   "filters": {
