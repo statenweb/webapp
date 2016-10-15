@@ -5,10 +5,10 @@ web/wp
 web/app/plugins
 web/app/uploads
 *.sql
-web/app/themes/dehart/js/main.min.js
-web/app/themes/dehart/style.css
-web/app/themes/dehart/style.css.map
-web/app/themes/dehart/external
+web/app/themes/{{ name }}/js/main.min.js
+web/app/themes/{{ name }}/style.css
+web/app/themes/{{ name }}/style.css.map
+web/app/themes/{{ name }}/external
 web/app/mu-plugins/
 .env
 
@@ -16,7 +16,7 @@ web/app/mu-plugins/
 web/.DS_Store
 web/app/.DS_Store
 web/app/themes/.DS_Store
-web/app/themes/dehart/.DS_Store
-web/app/themes/dehart/inc/.DS_Store
+web/app/themes/{{ name }}/.DS_Store
+web/app/themes/{{ name }}/inc/.DS_Store
 
 .idea/

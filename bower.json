@@ -1,8 +1,8 @@
 {
-  "name": "forthepeople",
-  "homepage": "http://forthepeople.com",
+  "name": "{{ name }}",
+  "homepage": "http://statenweb.com",
   "authors": [
-    "Mat Gargano <mgargano@forthepeople.com>"
+    "Mat Gargano <mat@statenweb.com>"
   ],
   "description": "",
   "main": "",
