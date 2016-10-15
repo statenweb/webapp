@@ -17,6 +17,7 @@
   "filters": {
     "markdown": "filters/markdown.js"
   },
+  "questions": "inquirer-questions.js",
   "container": "debian",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 }
