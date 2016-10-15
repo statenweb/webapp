@@ -1,7 +1,8 @@
 {
   "name": "statenweb",
   "parse": [
-    "*"
+    "*",
+    "!web/app/themes/template-theme/templates/"
   ],
   "discard": [
     "filters",
