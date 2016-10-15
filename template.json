@@ -3,7 +3,6 @@
   "parse": [
     "Capfile",
     "bower.json",
-    "config/",
     "composer.json",
     "Gruntfile.js",
     "package.json"
